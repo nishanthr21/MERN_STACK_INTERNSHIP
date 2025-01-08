@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird-Animation</title>
+    <style>
+        body{
+            margin:0;
+            display: flex;
+            height :100vh;
+            background:linear-gradient(70deg,#83f563,#c475f9);
+            align-items: center;
+            overflow:hidden;
+            }
+            .Bird{
+                position:relative;
+                width:100px;
+                height:90px;
+                animation: fly 6s linear infinite;
+
+            }
+
+            .Bird-Body{
+                position: absolute;
+                background-color:rgb(249, 150, 107);
+                width:50px;
+                height:80px;
+                border-radius: 50%;
+                top:15px;
+                left:20px;          
+            }
+
+            .wings{
+                height:40px;
+                width: 30px;
+                border-radius: 50%;
+                top:5px;
+                left:10px;
+                transform-origin:bottom center;
+            }
+
+            .right.left.wings{
+                left:auto;
+                right:10px;
+
+            }
+            .fly{
+                position: absolute;
+                background-color: #9e7575;
+                width:10px;
+                height:10px;
+                clip-path:polygon(0 0 100%60%,0 100%);
+                top:30px;
+                left:5px;
+            }
+
+            @keyframes fly{
+                0%{
+                    transform:translateX(-150px) translateY(20px);
+                }
+                25%{
+                    transform:translateX(150px) translateY(-20px);
+                }
+                50%{
+                    transform:translateX(300px) translateY(30px);
+                }
+                75%{
+                    transform:translateX(450px) translateY(-15px);
+                }
+                100%{
+                    transform:translateX(150px) translateY(-22px);
+                }}
+                @keyframes flap{
+                    0%,100%{
+                        transform: rotate(30deg);
+                    }
+                    50%{
+                        transform: rotate(-30deg);
+                    }
+                }
+            
+    </style>
+</head>
+<body>
+    <div class="Bird">
+        <div class="Bird-Body">
+            <div class="left-wings"> </div>           
+            <div class="right-wings"> </div>
+            <div class="fly"></div>
+        </div>
+    </div>
+</body>
+</html>

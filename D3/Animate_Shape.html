@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            display:flex;
+            padding:20px;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-color: darkseagreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .animey{
+                overflow:hidden;
+                border:2px solid #e7cccc;
+                width:90%;
+                border-radius: 20px;
+                padding: 30px;
+                white-space:nowrap;
+            }
+            .effect{
+                border-radius: 28px;
+                background-color: #bb4646;width:200%;
+                
+                display:inline-block;
+                text-align: center;
+                align-items: baseline;
+                font-size: 30px;
+                font-weight:bold;
+                animation: scroll-right 12s linear infinite;
+            }
+            @keyframes scroll-right{
+                from{
+                    transform: translateX(100%);}
+                    to{
+                        transform: translateX(-100%);
+                    }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="anime">
+        <div class="effect">
+            Earthquake of magnitude 7.9  desvastated and killed thousands of lives in NEPAL.
+        </div>
+
+    </div>
+</body>
+</html>
