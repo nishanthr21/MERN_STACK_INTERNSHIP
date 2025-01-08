@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper link</title>
+    <style>
+        body{
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:10;
+            padding:0%;
+            background-color: rgb(237, 235, 211);
+            
+        }
+        header{
+            background-color:rgb(105, 183, 219);
+            color: midnightblue;
+            padding:8px 15px;
+            text-align: center;
+        }
+            nav{
+                background-color: rgb(245, 225, 126);
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+            }
+        nav a{
+            text-decoration: dotted;
+            padding: 10px 20px;
+            margin: 0 12px;
+            border-radius: 6px;
+            transition:background-color 0.9s;
+        }
+        nav a:hover{
+            background-color: blueviolet;
+        }
+        section{
+            padding:20px;
+            margin: 20px 75px;
+            max-width: 1000 px;
+            background-color:rgb(216, 154, 154) ; ;
+            box-shadow: 0 0 10px ;
+            border-radius: 10px;
+
+        }
+        .button{
+            display:inline-block;
+            padding:10px 20px;
+            margin: 10px;
+            color:navy;
+            text-decoration:none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover{
+            background-color:lightpink;
+        }
+        footer{
+text-align: center;
+padding: 10px;
+background-color:cornflowerblue;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b><u>Showcase of My Hyperlink</u></b></h1>
+    </header>
+        <nav>
+            
+            <a href="#About">About</a>
+            <a href="#Contact">Contacts</a>
+            <a href="#Threads">Threads</a>
+        </nav>
+        
+        <section id="About"><h2>About us</h2> <p> we are creating a webpade that would serve as an interesting webpage desing. Click here to explore.
+            <a href ="about" class="button">click</a></p>
+
+        </section>
+        <section id="Threads">
+            <h2>My Thread Page</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/nishanthr21">Github</a>
+                </li>
+                <li>
+                    <a href="www.linkedin.com/in/nishanth-rajendiran">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="tel:+919363661657">Contact me</a>
+                </li>
+            </ul>
+        </section>
+        <section id="Contact">
+            <h2>Contact me</h2>
+            <p>
+                Have any queries feel free to contact .
+            </p>
+            <a href="mail:nishanht.r2023ece@sece.ac.in">nishanth.r2023ece@sece.ac.in</a>
+        </section>
+        <footer>
+            <p>&copy 2025 All Rights are Reserved</p>
+        </footer>
+    
+</body>
+</html>
