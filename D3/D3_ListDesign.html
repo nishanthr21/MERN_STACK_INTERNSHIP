@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listing the data</title>
+    <style>
+        body{
+            background-color:rgb(39, 17, 46) ;
+            color:aliceblue;
+                    }
+        body h1{
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color:rgb(61, 32, 76);
+                        text-align: center;
+                        padding: 10px;
+                        border-radius: 30px;                        
+                        width:50%;
+                        background-color: rgb(253, 245, 141);
+                        margin:20px auto;
+                        
+                        
+
+                    }
+
+                    div{
+                        border-radius: 30px;
+                        color:rgb(61, 32, 76);
+                        background-color: rgb(253, 245, 141);
+                        margin:0 auto;
+                        
+                        text-align:justify;
+                        padding:20px;
+                        width:80%;
+                        
+
+                    }
+                    .list1{
+                        display:grid;
+                        grid-template-columns: repeat(2,minmax(200px,1fr));
+            justify-content: space-around;
+                        
+                        gap: 30px;
+                       
+                    }
+                    .list11{
+                        display:grid;
+                        grid-template-columns: repeat(auto,minmax(200px,1fr));
+            justify-content: space-around;
+                        padding:20px;
+                        border-radius: 30px;
+                        list-style:none;
+                        background-color: rgb(192, 178, 205);
+                    }
+
+    </style>
+</head>
+<body>
+    <h1>
+        CSS LIST
+    </h1>
+<div>
+    <h2><u>Space Agencies and their Missions:</u></h2>
+    <ul class="list1">
+        <li class="list11">ISRO<ul>
+            <li>Chndarayaan 1</li>
+            <li>Mangalayaan</li>
+            <li>SPADEX</li>
+        </li>    
+        </ul>
+        <li class="list11">NASA<ul>
+            <li>Apollo-11</li>
+            <li>Voyager-2</li>
+            <li>Mars-2020</li>
+        </ul>    
+        </li>
+        <LI class="list11">JAXA
+        <ul>
+            <li>Hayabusa-2</li>
+            <li>SLIM</li>
+            <li>Kaguya</li>
+        </ul></LI>
+        <li class="list11">ROSCOSMOS
+        <ul>
+            <li>Venera</li>
+            <li>Luna-25</li>
+            <li>Mars-2</li>
+        </ul></li>
+        <LI class="list11">CNSA
+        <ul>
+            <li>Change-6</li>
+            <li>Tianwen-1</li>
+            <li>Gaofen-1</li>
+        </ul></LI>
+        <LI class="list11">ESA
+            <ul>
+                <li>Europa-Clipper</li>
+                <li>Huygens</li>
+                <li>LISA-Pathfinder</li>
+            </ul></LI>
+    </ul>
+</div>  
+</body>
+</html>

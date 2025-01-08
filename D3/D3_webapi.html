@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>API HTML</title>
+    <style>
+        body{
+            background-color: rgb(165, 188, 230);
+            text-align: center;
+            padding: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Weather Application</h1>
+    <button id="getClick">Check Weather</button>
+    <p id="temp" class="temp">To know the Weather Update</p>
+    <script>
+       const id = '';
+       const temp = document.getElementById('temp');
+       const CheckWeather = document.getElementById('getClick');
+        CheckWeather.addEventListener('click',() =>{
+            if('geo' in navigator){
+                navigator.geolocation.getCurrentPosition((position) => 
+            {
+                latitude,longitude = position.coords;
+
+                // Fetch API
+
+                localStorage.setItem('latitude',latitude);
+                localStorage.setItem('longitude',longitude);
+
+                url = "https://openweathermap.org/weathermap/?basemap=map&cities=true&layer=temperature&lat=10.9911&lon=76.9441&zoom=10"
+                fetch(url).then(Response => Response.json())
+                    .then(data =>{
+                        weather = `location:{data.name},Temperature:{data.temp},weather[0].Temperature.Response`;
+                        temp.textContent=weather;
+                    })
+                })
+
+            
+            }
+            else{
+                console.error('Error on frtching data');
+                temp.textContent='Failed to access the weather data';
+                
+            }
+        } )
+    </script>
+
+</body>
+
+</html>`
