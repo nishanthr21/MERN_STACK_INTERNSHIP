@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg, #58588a, #e7d076);
+            color: #1c1721;
+        }
+        .heading {
+            border-radius: 30px;
+            min-width:50%;
+            text-align: center;
+            padding: 35px ;
+            background: #23df78;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .heading h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            font-size: 3rem;
+            color: #350f11; 
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .main div {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+        .main h2 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #e62429;
+            display: inline-block;
+            color:rgb(19, 12, 61)
+        }
+        .image {
+            width: 150px;
+            height: 100px;
+            margin: 15px;
+            border: 2px solid #a07878;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .image:hover {
+            transform: scale(1.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #111;
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="heading">
+        <h1>The Marvel Universe</h1>
+    </div>
+
+
+    <div class="main">
+        <div class="first">
+            <h2>Popular Super Heroes</h2>
+            <div class="firstImage">
+                <img class="image" src="IMG-20250108-WA0007.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0001.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0015.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0019.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0014.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0004.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0013.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0010.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="second">
+            <h2>Popular Villains</h2>
+            <div class="secondImage">
+                <img class="image" src="IMG-20250108-WA0002.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0005.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0011.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0003.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0012.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0009.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0006.jpg" alt="">
+                <img class="image" src="IMG-20250108-WA0008.jpg" alt="">
+                
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        &copy; 2025 Marvel Universe. All Rights Reserved.
+    </footer>
+</body>
+</html>

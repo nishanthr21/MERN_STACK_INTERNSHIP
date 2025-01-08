@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Design</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            background-color:rgb(58, 78, 97);
+            color:black;
+            margin: 0%;
+            padding:0%;
+            display:flex;
+            
+            justify-content:center;
+            align-items:center;
+            height: 100vh;
+        }
+        
+        .form1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align:justify;
+            background: #d7e880;
+            background-size: auto;
+            backdrop-filter: blur();
+            padding:30px;
+            border-radius: 50px;
+            max-width:400px;
+            box-shadow:0 8px 20px #21302c;
+            height: auto;
+        }
+        .form1 h1{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-shadow: 1px 1px 1px;
+
+        }
+        .form1 label{
+            font-weight: 500;
+            border-width: 20px;
+            border-color: #212537;
+            display: block;
+            margin-bottom: 8px;
+            
+            
+            ;
+                  }
+
+                  .form1 input[type="text"],
+                  .form1 input[type="email"],
+                  .form1 input[type="password"],
+                  .form1 input[type="tel"]   {
+                    font-size: large;
+                    font-family:Georgia, 'Times New Roman', Times, serif;
+                    border-radius: 2px;
+                    text-align:left;
+                    border: #101413;
+                    border-width: 20px;
+                    width:100%;
+                    background-color: rgb(213, 249, 219);
+
+                  }
+                  
+                    .form1 button{
+                        font-size: large;
+                        padding: 5px;
+                        justify-content: center;
+                        align-items: center;
+                                transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                              background-color: rgb(211, 86, 52);
+                              border-radius: 20px;
+                              text-align: center;
+                              border-top: #212537;
+                        
+                                        }
+                    .form1 button:hover{
+                        background-color: rgb(243, 180, 180);
+                    }  
+                    
+                    .form1 p{
+                        padding: 5px;
+                        font-size:large;
+                        border-radius: 3px;
+                        background-color: rgb(160, 156, 214);
+                    }
+                    .form1 a{
+                        font-weight: 500;
+                        border-width: 3px;
+                    }
+                    .form1 a:hover{
+                        border-radius:3px;
+                        
+
+                        font-palette:inherit;
+                        background: #f3f2f1;
+                    }
+    </style>
+</head>
+<body>
+    <div class="form1">
+        <h1>Login/Sign Up</h1>
+
+        <form>
+            <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter you name" required></div>
+            <br>
+            <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email"  name="email" placeholder="Enter you email id" required>
+          </div>  <br>
+          <div>
+        <label for="phone_no">Phone Number: </label>
+        <input type="tel" id="number" name="number" placeholder="Enter you phone number ">
+           </div> <br>
+           <div>
+        <label for="Password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter your correct password" required>
+           </div> <br>
+        <center><button type="submit" >Submit</button></center><br>
+        </form>
+
+        <p>Already have an account? <a href="">Login here</a></p>
+    </div>
+</body>
+</html>
