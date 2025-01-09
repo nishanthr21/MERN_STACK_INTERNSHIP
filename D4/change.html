@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change</title>
+    <style>
+        #one{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: azure;
+            font-size: 30px;
+
+        }
+        .marque{
+            overflow:hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation:marque 10s linear infinite;
+        }
+        @keyframes marque{
+            from{
+                transform:translateX(100%)
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        #two{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #two:hover{
+            transition: color 0.8s ease;
+            color:blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="marque">
+        <h1>marques using js</h1>
+    </div>
+
+    <p id="one">I am nishanth</p>
+    <p id="two">I am a good boy</p>
+    <script>
+        document.getElementById("two").style.color="pink";
+        document.getElementById("two").style.fontFamily='Arial';
+        document.getElementById("two").style.fontSize="22px";
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>please enter a number 1 to 10: </p>
+    <input id="val">
+    <button type="button" onclick="myfun()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function myfun(){
+            let a = document.getElementById("val").value;
+            let res;
+            if(a<1 || a>10){
+                res="Input is incorrect";
+            }
+            else{
+                res="Validation Success";
+
+            }
+            document.getElementById("demo").innerHTML=res;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial</title>
+    <style>
+        #xx{
+            width:410px;
+            height:410px;
+            position: relative;
+            background-color: #f19e9e;
+            
+        }
+        #animate{
+            width:40px;
+            height:40px;
+            position: relative;
+            background-color: #71f577;
+
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <button onclick="myMove()">click</button>
+        <div id="xx">
+            <div id="animate"></div>
+        </div>
+        <script>
+            function myMove(){
+                let id=null;
+                const obj=document.getElementById("animate");
+                let move=0; 
+                clearInterval(id);
+                id=setInterval(frame,6);
+                function frame(){
+                    if(move == 350){
+                        clearInterval(id);
+                    }
+                    else{
+                        move++;
+                        obj.style.top=move+"px";
+                        obj.style.top=move+"px";
+                    }
+                }
+                
+            }
+        </script>
+    </p>
+</body>
+</html>
