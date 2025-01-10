@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+            margin :0;
+            padding :10px;
+            transition: background 0.5s,color 0.5s;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        h2{
+            font-size: 2rem;
+            font-weight: 600;
+            color:#4f2215;
+            background-color: #33f882;
+            border-width: 90%;
+            border-radius: 20px;
+
+        }
+        .list{
+            list-style:none;
+            padding:0;
+            margin: 20px 20px;
+        }
+
+        .lst-itm{
+            background-color: #21e06e;
+            margin: 15px 0;
+            padding:15px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px #f5a74f;
+            font-size: 1.5 rem;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.3s ease,box-shadow 0.3s ease;
+            cursor:pointer;
+            position:relative;
+            overflow: hidden;
+        }
+
+        .lst-itm:hover{
+            transform: translateY(-5px);
+            box-shadow:0px 8px 20px black;
+
+        }
+        .lst-itm:before{
+            content:"";
+            position:absolute;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg,#33f882,#fe754f);
+            left:0;
+            top:0;
+            transition: width 0.4s;
+            ;
+
+        }
+        .lst-itm:hover::before{
+            width:12px;
+
+        }
+        .button{
+            padding:8px 16px;
+            background-color: #4f2215;
+            color: crimson;
+            border-radius:5px;
+            cursor:pointer;transition:background 0.3s;
+            font-size:1rem;
+            
+        }
+        .button:hover{
+            background-color: darkgreen;
+        }
+
+        .dark-mode{
+            background-color: rgb(41, 41, 18);
+            color: aquamarine;
+
+        }
+        .dark-mode.lst-itm{
+            background-color: darkslateblue;
+            color:darksalmon;
+            box-shadow: 0px 5px 15px #aade41;
+
+        }
+        dark-mode.ldt-itm:before(){
+            background:linear-gradient(170deg,#45f47495,#464ec579);
+
+        }
+        .dark-mode.button{
+            background-color: #aade41;
+        }
+        .dark-mode.button:hover{
+            background-color:rgb(94, 166, 142);
+               }
+
+        .btn{
+            position: absolute;
+            cursor: pointer;
+            top:30px;
+            color:rgb(39, 26, 26);
+            padding:10px 30px;
+            right:20px;
+            border-radius: 30px;
+            transition: background 0.3s;}
+            .btn:hover{
+                color:aliceblue;
+                background-color: rgb(30, 21, 21);
+
+            }
+
+            .dark-mode.btn{
+                background-color: aliceblue;
+                color: rgb(31, 24, 16)
+            }
+            .dark-mode.button:hover{
+                background-color: #21e06e;
+            }
+            @media(max-width:780px){
+                .container{
+                    width:95px;
+                }
+                .lst-itm{
+                    flex:direction;text-align: center;
+
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="DarkMode()">Dark Mode</button>
+        <div class="container">
+            <h2>theme animation</h2>
+        </div>
+        <ul class="list">
+            <li class=" lst-itm">
+                <span>Javascript</span>
+                <button claa="button">start</button>
+
+            </li>
+            <li class="lst-itm">
+                <span> Master in JS</span>
+                <button class="button">Access</button>
+            </li>
+
+            <li class="lst-itm">
+                <span> full stack develop</span>
+                <button class="button">Enroll</button>
+            </li>
+
+            <li class="lst-itm">
+                <span> creating Tech Blogs</span>
+                <button class="button">Explore</button>
+            </li>
+
+        </ul>
+        <script>
+            function DarkMode(){
+                document.body.classList.toggle("dark-mode");
+                
+            }
+        </script>
+</body>
+</html>
