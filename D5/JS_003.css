@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.google.com/');
+
+
+
+body{
+    background:linear-gradient(115deg,#9b55f2,#40f940) ;
+    text-align: center;
+    padding:30px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow:hidden;
+
+}
+
+h1{
+    margin-top: 6%;
+    font-size:48px;
+}
+#button{
+    width:160px;
+    height:60px;
+    background-color: rgb(136, 245, 103);
+    font-size:35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:centre;
+    line-height:50px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 200px;
+    }
+
+    #button:hover{
+        box-shadow:0px 15px 15px #263029;
+        cursor:pointer;
+
+    }
+    #funContent,#fun{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        line-height:39px;
+         
+    }
+    #funContent,image.png{
+        margin-top:6%;
+        border-radius: 25px;;
+    }
+
+    #footer{
+        font-size:25px;
+        line-height:4px;
+        padding:30px;
+        background-color: #5c615e;
+        text-decoration:none;
+        color:rgb(222, 171, 109);
+    }
+    #img{
+        height: 50px;
+        width:auto;
+    }
