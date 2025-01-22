@@ -1,0 +1,140 @@
+.about-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .about-design::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 6s infinite ease-in-out alternate;
+  }
+  
+  .about-design::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 8s infinite ease-in-out alternate-reverse;
+  }
+  
+  .about-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #ffdd57;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .about-title:hover {
+    color: #ff6b6b;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+    opacity: 0.9;
+    color: #e6e6e6;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-description:hover {
+    transform: scale(1.02);
+  }
+  
+  .vision,
+  .mission {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+    border-left: 4px solid #ff6b6b;
+    padding-left: 20px;
+    font-style: italic;
+    color: #dcdcdc;
+    position: relative;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .vision:hover,
+  .mission:hover {
+    border-color: #ffdd57;
+    color: #fff;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .about-image img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem;
+    }
+  
+    .about-description,
+    .vision,
+    .mission {
+      font-size: 1rem;
+    }
+  
+    .about-image img {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-description,
+    .vision,
+    .mission {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  @keyframes floating {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }

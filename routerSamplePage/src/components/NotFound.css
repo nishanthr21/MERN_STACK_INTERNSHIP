@@ -1,0 +1,18 @@
+.notfound-design{
+    background-color: dimgrey;
+    padding:10px;
+}
+
+.notfound-title{
+    color:bisque;
+    font-size: 20px;
+    text-shadow: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.notfound-message{
+    text-align: center;
+    color:beige;
+    text-shadow: 10px;
+
+}
