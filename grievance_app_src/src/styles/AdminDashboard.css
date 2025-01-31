@@ -1,0 +1,145 @@
+.admin-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.admin-header h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.admin-header p {
+  color: #666;
+}
+
+.complaints-list {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.complaints-list h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.complaint-card {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.complaint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.complaint-id {
+  font-family: monospace;
+  font-weight: bold;
+  color: #495057;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background-color: #ffd43b;
+  color: #664d03;
+}
+
+.status-badge.approved {
+  background-color: #20c997;
+  color: #0f5132;
+}
+
+.status-badge.rejected {
+  background-color: #ff6b6b;
+  color: #842029;
+}
+
+.status-badge.resolved {
+  background-color: #4dabf7;
+  color: #084298;
+}
+
+.complaint-details {
+  margin-bottom: 1rem;
+}
+
+.complaint-details p {
+  margin: 0.5rem 0;
+  color: #495057;
+}
+
+.complaint-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.action-button.approve {
+  background-color: #20c997;
+  color: white;
+}
+
+.action-button.approve:hover {
+  background-color: #12b886;
+}
+
+.action-button.reject {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.action-button.reject:hover {
+  background-color: #fa5252;
+}
+
+.action-button.resolve {
+  background-color: #4dabf7;
+  color: white;
+}
+
+.action-button.resolve:hover {
+  background-color: #339af0;
+}
+
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 1rem;
+  }
+  
+  .complaint-actions {
+    flex-direction: column;
+  }
+  
+  .action-button {
+    width: 100%;
+  }
+}
